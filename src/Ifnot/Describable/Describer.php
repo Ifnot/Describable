@@ -121,8 +121,8 @@ class Describer {
 		if(method_exists($this->entity, 'getDescribeMetas')) {
 			return $this->entity->getDescribeMetas($property);
 		}
-		elseif(isset($this->entity->describeMetas)) {
-			return $this->entity->describeMetas;
+		elseif(isset($this->entity->describable) AND isset($this->entity->describable['metas'])) {
+			return $this->entity->describable['metas'];
 		}
 		else {
 			return [];
