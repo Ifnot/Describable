@@ -1,0 +1,29 @@
+{
+    "name": "ifnot/describable",
+    "description": "Describable is a simple way for define object/property unique identification.",
+    "keywords": ["describable", "describe", "model", "eloquent"],
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Anael Favre",
+            "email": "anael.favre@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "anael.favre@gmail.com",
+        "issues": "https://github.com/Ifnot/describable/issues"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Ifnot\\Describable\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
